@@ -12,6 +12,7 @@ def track():
 
     # Log the information
     with open('scan_log.txt', 'a') as log_file:
+        #log_file.write(f'{timestamp} - {user_ip} - {user_agent}\n')
         log_file.write(f'{timestamp} - {user_ip} - {user_agent}\n')
 
     # Redirect to the actual URL
@@ -19,3 +20,4 @@ def track():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
